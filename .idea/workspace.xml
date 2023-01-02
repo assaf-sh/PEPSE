@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="552e18ee-52ac-47a3-9f09-2157a3f2a17e" name="Changes" comment="starting proj">
-      <change afterPath="$PROJECT_DIR$/src/pepse/PepseGameManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pepse/util/ColorSupplier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pepse/world/Block.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pepse/world/trees/Tree.java" afterDir="false" />
+    <list default="true" id="552e18ee-52ac-47a3-9f09-2157a3f2a17e" name="Changes" comment="naive implementation of perlin noise of the ground + structure build">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ex5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pepse/PepseGameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pepse/PepseGameManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +75,14 @@
       <option name="presentableId" value="Default" />
       <updated>1672651811216</updated>
     </task>
+    <task id="LOCAL-00001" summary="naive implementation of perlin noise of the ground + structure build">
+      <created>1672663125195</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672663125195</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -107,6 +110,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="starting proj" />
-    <option name="LAST_COMMIT_MESSAGE" value="starting proj" />
+    <MESSAGE value="naive implementation of perlin noise of the ground + structure build" />
+    <option name="LAST_COMMIT_MESSAGE" value="naive implementation of perlin noise of the ground + structure build" />
   </component>
 </project>
