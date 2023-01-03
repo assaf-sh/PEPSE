@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="552e18ee-52ac-47a3-9f09-2157a3f2a17e" name="Changes" comment="naive implementation of perlin noise of the ground + structure build">
+    <list default="true" id="552e18ee-52ac-47a3-9f09-2157a3f2a17e" name="Changes" comment="adding sun and naive implementation of sun movements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pepse/world/Terrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pepse/world/Terrain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pepse/world/daynight/Sun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pepse/world/daynight/Sun.java" afterDir="false" />
+    </list>
+    <list id="65f4bdcc-b9be-49f2-ae03-adca9204fb7e" name="Changes by oriat" comment="">
       <change beforePath="$PROJECT_DIR$/src/pepse/PepseGameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pepse/PepseGameManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672663125195</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="adding sun and naive implementation of sun movements">
+      <created>1672672901796</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672672901796</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,6 +122,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="starting proj" />
     <MESSAGE value="naive implementation of perlin noise of the ground + structure build" />
-    <option name="LAST_COMMIT_MESSAGE" value="naive implementation of perlin noise of the ground + structure build" />
+    <MESSAGE value="adding sun and naive implementation of sun movements" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding sun and naive implementation of sun movements" />
   </component>
 </project>

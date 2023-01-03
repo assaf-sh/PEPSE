@@ -49,7 +49,6 @@ public class Terrain {
         int lastBlockX = maxX - (maxX % Block.SIZE);
         for (int blockX = firstBlockX; blockX <= lastBlockX; blockX+= Block.SIZE) {
             int y = (int) Math.floor((float) GroundHeightAt(blockX)/Block.SIZE)*Block.SIZE;
-            y = y;
             for (int j = 0; j < TERRAIN_DEPTH; j++) {
                 if (y+(j*Block.SIZE) > windowDimensions.y()) break;
                 crateBlock(new Vector2(blockX,y+(j*Block.SIZE)));

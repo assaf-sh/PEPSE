@@ -10,23 +10,28 @@ import danogl.util.Vector2;
 
 import java.awt.*;
 
+
 public class Sun {
+
+    private static float RADIUS;
 
     public static GameObject create(GameObjectCollection gameObjects,
                                     int layer, Vector2 windowDimensions,
                                     float cycleLength){
-        Vector2 statringlocation = new Vector2(windowDimensions.x()/1.5f, windowDimensions.y()/3);
         GameObject sun = new GameObject(Vector2.ZERO, new Vector2(200,200),new OvalRenderable(Color.YELLOW));
-        sun.setCenter(statringlocation);
         sun.setCoordinateSpace(CoordinateSpace.CAMERA_COORDINATES);
         sun.setTag("sun");
+        RADIUS = windowDimensions.y()/2f;
         gameObjects.addGameObject(sun,layer);
-        Transition<Vector2> transition = new Transition<>(sun,center -> sun.setCenter((Vector2) center),
-                statringlocation,
-                Vector2.ZERO,
-                Transition.LINEAR_INTERPOLATOR_VECTOR,
-                cycleLength/2,
-                TransitionType.TRANSITION_BACK_AND_FORTH,
+        Vector2 center = new Vector2(windowDimensions.x()/2,windowDimensions.y()/1.5f);
+        Transition<Float> transition = new Transition<>(sun,
+                theta -> sun.setCenter(center.add(new Vector2((float) (RADIUS* Math.sin((double) theta)),
+                        (float) (RADIUS*Math.cos((double) theta))))),
+                -(float)Math.PI,
+                (float)Math.PI,
+                Transition.LINEAR_INTERPOLATOR_FLOAT,
+                cycleLength,
+                TransitionType.TRANSITION_LOOP,
                 null);
         return sun;
     }
